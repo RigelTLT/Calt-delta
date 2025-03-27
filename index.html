@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор Дельты</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <h1>Калькулятор Дельты</h1>
+
+      <div class="input-group">
+        <label for="clientAmount">Сумма Клиента:</label>
+        <input type="number" id="clientAmount" placeholder="Введите сумму" />
+        <select id="clientVat">
+          <option value="1.2">С НДС (20%)</option>
+          <option value="1.0">Без НДС</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="carrierAmount">Сумма Перевозчика:</label>
+        <input type="number" id="carrierAmount" placeholder="Введите сумму" />
+        <select id="carrierVat">
+          <option value="1.2">С НДС (20%)</option>
+          <option value="1.0">Без НДС</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="delta">Дельта:</label>
+        <input type="number" id="delta" readonly />
+      </div>
+
+      <button id="calculate">Рассчитать</button>
+      <button id="reset">Сбросить</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
